@@ -1,11 +1,18 @@
-import React from 'react';
+import React, {Fragment} from "react";
+import Logo from "./Logo";
+import Navbar from "./Navbar";
+import Products from "./Products";
+import Footer from "./Footer";
 
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        Eloo
-      </div>
+      <Fragment>
+      	<Logo />
+      	<Navbar />
+      	<Products />
+      	<Footer />
+      </Fragment>
     );
   }
 }
