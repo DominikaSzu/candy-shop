@@ -1,10 +1,11 @@
-import React from 'react';
+import React from "react";
+import Product from "./Product";
 
 class Products extends React.Component {
   render() {
     return (
       <div className="products">
-       	Products
+       	<Product />
       </div>
     );
   }

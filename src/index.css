@@ -42,6 +42,10 @@ body, html {
 	align-items: center;
 }
 
+.fas {
+	padding: 25px;
+}
+
 /*  Products Component  */
 
 .products {
