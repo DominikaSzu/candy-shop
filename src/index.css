@@ -13,7 +13,6 @@ body, html {
 	height: 100%;	
 	display: flex;
 	flex-direction: column;
-	border: 2px gold solid;
 	align-items: center;
 }
 
@@ -30,6 +29,8 @@ body, html {
 	align-items: center;
 	justify-content: center;
 	width: 80%;
+	flex-direction: column;
+	font-size: 40px;
 }
 
 
@@ -51,6 +52,16 @@ body, html {
 
 .products {
 	width: 80%;
+}
+
+/*  Single Product Component  */
+
+.product {
+	padding: 3%;
+}
+
+.product p {
+	text-align: justify;
 }
 
 /*  Footer Component  */

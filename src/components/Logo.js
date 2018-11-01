@@ -4,7 +4,8 @@ class Logo extends React.Component {
   render() {
     return (
       <div className="logo">
-       	Candy Shop
+       	<span className="first">Candy</span> 
+       	<span className="second">Shop</span> 
       </div>
     );
   }
