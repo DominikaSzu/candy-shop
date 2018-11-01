@@ -7,13 +7,13 @@ import Footer from "./Footer";
 class App extends React.Component {
   render() {
     return (
-      <div id="wrapper">
+      <div className="wrapper">
       	<Logo />
       	<Navbar />
       	<Products />
       	<Footer />
       </div>
-    );
+    )
   }
 }
 

@@ -4,7 +4,9 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar">
-       	Navbar
+       	<span className="home">Home</span>
+       	<span className="about-us">About us</span>
+       	<span className="basket">Trolley</span>
       </div>
     );
   }
