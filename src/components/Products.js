@@ -6,6 +6,9 @@ class Products extends React.Component {
     return (
       <div className="products">
        	<Product />
+       	<Product />
+       	<Product />
+       	<Product />
       </div>
     );
   }

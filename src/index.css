@@ -9,8 +9,8 @@ body, html {
 }
 
 .wrapper {
-	width: 100vw;
-	height: 100vh;	
+	width: 100%;
+	height: 100%;	
 	display: flex;
 	flex-direction: column;
 	border: 2px gold solid;
@@ -25,6 +25,7 @@ body, html {
 
 .logo {
 	height: 40vh;
+	min-height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -35,15 +36,15 @@ body, html {
 /*  Navbar Component  */
 
 .navbar {
+	min-height: 50px;
 	width: 80%;
-	height: 50px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
-.fas {
-	padding: 25px;
+.navbar > * {
+	padding: 15px;
 }
 
 /*  Products Component  */
@@ -62,7 +63,6 @@ body, html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	position: fixed;
 }
 
 .first-span {
