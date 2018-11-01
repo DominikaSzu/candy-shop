@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Products from "./Products";
@@ -7,12 +7,12 @@ import Footer from "./Footer";
 class App extends React.Component {
   render() {
     return (
-      <Fragment>
+      <div id="wrapper">
       	<Logo />
       	<Navbar />
       	<Products />
       	<Footer />
-      </Fragment>
+      </div>
     );
   }
 }

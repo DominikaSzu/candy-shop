@@ -3,7 +3,7 @@ import React from 'react';
 class Products extends React.Component {
   render() {
     return (
-      <div className="App">
+      <div className="products">
        	Products
       </div>
     );
