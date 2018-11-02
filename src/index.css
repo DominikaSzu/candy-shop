@@ -8,7 +8,7 @@ body, html {
 	box-sizing: inherit;
 }
 
-.wrapper {
+.wrapper, .about-us {
 	width: 100%;
 	height: 100%;	
 	display: flex;
@@ -16,7 +16,7 @@ body, html {
 	align-items: center;
 }
 
-.wrapper > * {
+.wrapper > *, .about-us >* {
 	border: 1px pink solid; /* BORDER FOR BEGINNING*/
 }
 
@@ -64,6 +64,20 @@ body, html {
 	text-align: justify;
 }
 
+/*  AboutUs Component  */
+
+.info-about-us {
+	width: 80%;
+}
+
+.info-about-us {
+	padding: 3%;
+}
+
+.info-about-us .desc {
+	text-align: justify;
+}
+
 /*  Footer Component  */
 
 .footer {
@@ -74,6 +88,7 @@ body, html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-top: 10px;
 }
 
 .first-span {
