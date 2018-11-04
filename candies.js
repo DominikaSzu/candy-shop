@@ -2,36 +2,36 @@ const candies = {
 	chocolatePie: {
 		name: "Chocolate Pie",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/chocolatepie.jpg"
 	},
 	cinamonBuns: {
 		name: "Cinamon Buns",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/cinamonbuns.jpg"
 	},
 	donuts: {
 		name: "Donuts",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/donuts.jpg"
 	},
 	gingerCake: {
 		name: "Ginger Cake",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/gingercake.jpg"
 	},
 	mashmallows: {
 		name: "Marshmallows",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/marshmallows.jpg"
 	},
 	pumpkinBalls: {
 		name: "Pumpkin Balls",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/pumpkinballs.jpg"
 	},
 	waffels: {
 		name: "Waffels",
 		desc: "Blabla",
-		img: "#"
+		img: "./images/waffels.jpg"
 	}
 }
