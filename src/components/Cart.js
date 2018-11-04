@@ -8,10 +8,10 @@ class Cart extends React.Component {
   render() {
     return (
       <div className="cart">
-		<Logo />
-		<Navbar />
-		<CandyBasket />
-		<Footer />
+		    <Logo />
+		    <Navbar />
+		    <CandyBasket />
+		    <Footer />
       </div>
     );
   }

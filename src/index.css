@@ -8,6 +8,11 @@ body, html {
 	box-sizing: inherit;
 }
 
+/*#root {
+	width: 100%;
+	height: 100%;
+}*/
+
 .wrapper, .about-us, .cart {
 	width: 100%;
 	height: 100%;	
@@ -23,12 +28,13 @@ body, html {
 /*  Logo Component  */
 
 .logo {
-	height: 40vh;
+	height: 60vh;
 	min-height: 300px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 80%;
+	max-width: 700px;
 	flex-direction: column;
 	font-size: 40px;
 }
@@ -39,6 +45,7 @@ body, html {
 .navbar {
 	min-height: 50px;
 	width: 80%;
+	max-width: 700px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -52,6 +59,7 @@ body, html {
 
 .products {
 	width: 80%;
+	max-width: 700px;
 }
 
 /*  Single Product Component  */
@@ -68,6 +76,7 @@ body, html {
 
 .candy-basket {
 	width: 80%;
+	max-width: 700px;
 	padding: 3%;
 }
 
@@ -76,6 +85,7 @@ body, html {
 
 .info-about-us {
 	width: 80%;
+	max-width: 700px;
 	padding: 3%;
 }
 
