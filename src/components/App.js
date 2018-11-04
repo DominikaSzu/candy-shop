@@ -6,6 +6,12 @@ import Footer from "./Footer";
 
 
 class App extends React.Component {
+
+  state = {
+    candies: {},
+    cart: {}
+  }
+
   render() {
     return (
       <div className="wrapper">
