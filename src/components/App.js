@@ -9,16 +9,8 @@ import candies from "../candies";
 class App extends React.Component {
 
   state = {
-    candies: {},
+    candies,
     cart: {}
-  }
-
-  loadCandies = () => {
-    this.setState( { candies });
-  }
-
-  componentWillMount =() => {
-    this.loadCandies();
   }
 
   render() {
@@ -27,7 +19,7 @@ class App extends React.Component {
       <div className="wrapper">
       	<Logo />
       	<Navbar />
-      	<Products />
+      	<Products candies={this.state.candies} />
       	<Footer />
       </div>
     )

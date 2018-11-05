@@ -5,10 +5,12 @@ class Products extends React.Component {
   render() {
     return (
       <div className="products">
-       	<Product />
-       	<Product />
-       	<Product />
-       	<Product />
+        {Object.keys(this.props.candies).map(key => {
+          return <Product key={key} info={this.props.candies[key]}/>
+        }
+
+          )
+        }
       </div>
     );
   }
