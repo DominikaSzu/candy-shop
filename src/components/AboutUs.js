@@ -5,11 +5,30 @@ import Footer from "./Footer";
 import companyFoto from "../company.jpg";
 
 class AboutUs extends React.Component {
+  
+    navigateToHome = (e) => {
+    e.preventDefault();
+    this.props.history.push("/");
+  }
+
+  navigateToCompanyInfo = (e) => {
+    e.preventDefault();
+    this.props.history.push("/about-us");
+  }
+
+  navigateToCart = (e) => {
+    e.preventDefault();
+    this.props.history.push("/cart");
+  }
+
+
   render() {
     return (
       <div className="about-us">
         <Logo />
-		<Navbar />
+		<Navbar navigateToHome={this.navigateToHome} 
+                navigateToCompanyInfo={this.navigateToCompanyInfo}
+                navigateToCart={this.navigateToCart}/>
 		<div className="info-about-us">
 			<h3 className="company">Candy Shop
 			</h3>
