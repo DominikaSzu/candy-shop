@@ -5,7 +5,7 @@ class Logo extends React.Component {
     return (
       <div className="logo">
        	<span className="first">Candy</span> 
-       	<span className="second">Shop</span> 
+       	<span className="second" role="img" aria-label="Candy">Shop 🍬</span>
       </div>
     );
   }

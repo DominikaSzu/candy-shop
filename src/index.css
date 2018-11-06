@@ -8,20 +8,16 @@ body, html {
 	box-sizing: inherit;
 }
 
-/*#root {
-	width: 100%;
-	height: 100%;
-}*/
-
-.wrapper, .about-us, .cart {
+.wrapper, .about-us, .cart, .not-found {
 	width: 100%;
 	height: 100%;	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Dosis', sans-serif;
 }
 
-.wrapper > *, .about-us >*, .cart >* {
+.wrapper > *, .about-us >*, .cart >*, .not-found >* {
 	border: 1px pink solid; /* BORDER FOR BEGINNING*/
 }
 
@@ -36,7 +32,8 @@ body, html {
 	width: 80%;
 	max-width: 700px;
 	flex-direction: column;
-	font-size: 40px;
+	font-size: 45px;
+	font-family: 'Kumar One Outline', cursive;
 }
 
 
@@ -56,12 +53,34 @@ body, html {
 	cursor: pointer;
 }
 
+/*  NotFound Component  */
+
+.not-found .lost {
+	width: 80%;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 5%;
+}
+
+.not-found .lost img {
+	border-radius: 5%;
+	max-width: 250px;
+	margin: 3%;
+}
+
+.not-found .lost p {
+	margin: 3%;
+	text-align: right;
+}
+
 /*  Products Component  */
 
 .products {
 	width: 80%;
 	max-width: 700px;
-	margin-top: 3%;
 	display: flex;
 	flex-direction: column;
 }
@@ -72,12 +91,17 @@ body, html {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	margin: 4% auto;
+}
+
+.product h3 {
+	margin-bottom: 0;
 }
 
 .product p {
 	text-align: justify;
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 .product img {
@@ -86,7 +110,20 @@ body, html {
 
 .product button {
 	cursor: pointer;
+	font-family: 'Dosis', sans-serif;
+	border-radius: 5%;
+	width: 85px;
+	height: 30px;
+	background-color: pink;
+	border: 0;
 }
+
+.product button:focus {
+	border-radius: 5%;
+	outline: none;
+	border: 2px solid #f07995;
+}
+
 
 /*  CandyBasket Component  */
 
@@ -105,6 +142,11 @@ body, html {
 	align-items: center;
 }
 
+.info-about-us .company {
+	padding-top: 3%;
+	text-align: center;
+}
+
 .about-us .info-about-us img {
 	border-radius: 50%;
 	max-width: 210px;
@@ -113,7 +155,7 @@ body, html {
 .info-about-us {
 	width: 80%;
 	max-width: 700px;
-	padding: 3%;
+	padding-bottom: 2%;
 }
 
 .info-about-us .desc {
@@ -153,29 +195,32 @@ body, html {
 	.product {
 		display: grid;
 		grid-template-columns: 0.5fr 4fr 0.5fr 4fr 0.5fr;
-		grid-template-rows: 0.5fr 1fr 3fr 1fr 0.5fr;
+		grid-template-rows: 1fr 3fr 1fr;
 		align-items: center;
 		justify-items: center;
+		margin: 0;
 	}
 
 	.product img {
 		grid-column: 2 / 3;
-		grid-row: 3 / 4;
+		grid-row: 2 / 3;
 	}
 
 	.product h3 {
 		grid-column: 4 / 5;
-		grid-row: 2 / 3;
+		grid-row: 1 / 2;
+		align-self: end;
 	}
 
 	.product p {
 		grid-column: 4 / 5;
-		grid-row: 3 / 4;
+		grid-row: 2 / 3;
 	}
 
 	.product button {
 		grid-column: 4 / 5;
-		grid-row: 4 / 5;
+		grid-row: 3 / 4;
+		align-self: start;
 	}
 
 	/*  AboutUs Component  */
@@ -201,4 +246,14 @@ body, html {
 		grid-row: 2 / 3;
 	}
 
+	/*  NotFound Component  */
+
+	.not-found .lost {
+		width: 80%;
+		max-width: 700px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
 }
