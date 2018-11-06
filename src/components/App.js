@@ -28,6 +28,11 @@ class App extends React.Component {
     this.props.history.push("/cart");
   }
 
+  addToCart = (element) => {
+    const cart = {...this.state.cart};
+    cart[element] = cart[element] +1 || 1;
+    this.setState({ cart });
+  }
 
   render() {
     
@@ -38,7 +43,7 @@ class App extends React.Component {
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
                 navigateToCart={this.navigateToCart}
         />
-      	<Products candies={this.state.candies} />
+      	<Products candies={this.state.candies} cart={this.state.cart} addToCart={this.addToCart} />
       	<Footer />
       </div>
     )
