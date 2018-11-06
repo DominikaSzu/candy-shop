@@ -68,7 +68,6 @@ body, html {
 /*  Single Product Component  */
 
 .product {
-	padding: 3%;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -76,6 +75,8 @@ body, html {
 
 .product p {
 	text-align: justify;
+	margin-left: 2%;
+	margin-right: 2%;
 }
 
 .product img {
@@ -98,6 +99,17 @@ body, html {
 /*  AboutUs Component  */
 
 .info-about-us {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-us .info-about-us img {
+	border-radius: 50%;
+	max-width: 210px;
+}
+
+.info-about-us {
 	width: 80%;
 	max-width: 700px;
 	padding: 3%;
@@ -105,6 +117,8 @@ body, html {
 
 .info-about-us .desc {
 	text-align: justify;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 /*  Footer Component  */
@@ -132,6 +146,9 @@ body, html {
 /*  Media queries  */
 
 @media screen and (min-width: 600px) {
+
+	/*  Product Component  */
+
 	.product {
 		display: grid;
 		grid-template-columns: 0.5fr 4fr 0.5fr 4fr 0.5fr;
@@ -159,4 +176,28 @@ body, html {
 		grid-column: 4 / 5;
 		grid-row: 4 / 5;
 	}
+
+	/*  AboutUs Component  */
+
+	.info-about-us {
+		display: grid;
+		grid-template-rows: 1fr 3fr;
+		grid-template-columns: 0.5fr 3fr 0.5fr 3fr 0.5fr;
+	}
+
+	.info-about-us .company {
+		grid-column: 4 / 5; 
+		grid-row: 1 / 2;
+	}
+
+	.info-about-us img {
+		grid-column: 2 / 3; 
+		grid-row: 1 / 3;
+	}
+
+	.info-about-us .desc {
+		grid-column: 4 / 5; 
+		grid-row: 2 / 3;
+	}
+
 }
