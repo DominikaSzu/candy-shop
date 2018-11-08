@@ -16,9 +16,9 @@ class NotFound extends React.Component {
     this.props.history.push("/about-us");
   }
 
-  navigateToCart = (e) => {
+  navigateToMap = (e) => {
     e.preventDefault();
-    this.props.history.push("/cart");
+    this.props.history.push("/visit-us");
   }
 
   render() {
@@ -27,7 +27,7 @@ class NotFound extends React.Component {
     		<Logo />
     		<Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
-                navigateToCart={this.navigateToCart}/>
+                navigateToMap={this.navigateToMap}/>
        			<div className="lost">
 					<img src={coffeeFoto} alt="Coffee time"/>
 					<p>Hi there, it seems you got lost <span role="img" aria-label="Smile">😅</span>

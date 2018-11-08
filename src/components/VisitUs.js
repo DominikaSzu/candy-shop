@@ -2,9 +2,9 @@ import React from "react";
 import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import CandyBasket from "./CandyBasket";
+import MapContainer from "./MapContainer";
 
-class Cart extends React.Component {
+class VisitUs extends React.Component {
   
     navigateToHome = (e) => {
     e.preventDefault();
@@ -16,24 +16,24 @@ class Cart extends React.Component {
     this.props.history.push("/about-us");
   }
 
-  navigateToCart = (e) => {
+  navigateToMap = (e) => {
     e.preventDefault();
-    this.props.history.push("/cart");
+    this.props.history.push("/visit-us");
   }
 
 
   render() {
     return (
-      <div className="cart">
+      <div className="map">
 		    <Logo />
 		    <Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
-                navigateToCart={this.navigateToCart}/>
-		    <CandyBasket />
+                navigateToMap={this.navigateToMap}/>
+		    <MapContainer />
 		    <Footer />
       </div>
     );
   }
 }
 
-export default Cart;
+export default VisitUs;

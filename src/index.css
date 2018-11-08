@@ -8,7 +8,7 @@ body, html {
 	box-sizing: inherit;
 }
 
-.wrapper, .about-us, .cart, .not-found {
+.wrapper, .about-us, .map, .not-found {
 	width: 100%;
 	height: 100%;	
 	display: flex;
@@ -17,7 +17,7 @@ body, html {
 	font-family: 'Dosis', sans-serif;
 }
 
-.wrapper > *, .about-us >*, .cart >*, .not-found >* {
+.wrapper > *, .about-us >*, .map >*, .not-found >* {
 	border: 1px pink solid; /* BORDER FOR BEGINNING*/
 }
 
@@ -108,26 +108,9 @@ body, html {
 	border-radius: 5%;
 }
 
-.product button {
-	cursor: pointer;
-	font-family: 'Dosis', sans-serif;
-	border-radius: 5%;
-	width: 85px;
-	height: 30px;
-	background-color: pink;
-	border: 0;
-}
+/*  MapContainer Component  */
 
-.product button:focus {
-	border-radius: 5%;
-	outline: none;
-	border: 2px solid #f07995;
-}
-
-
-/*  CandyBasket Component  */
-
-.candy-basket {
+.map-container {
 	width: 80%;
 	max-width: 700px;
 	padding: 3%;
@@ -215,12 +198,6 @@ body, html {
 	.product p {
 		grid-column: 4 / 5;
 		grid-row: 2 / 3;
-	}
-
-	.product button {
-		grid-column: 4 / 5;
-		grid-row: 3 / 4;
-		align-self: start;
 	}
 
 	/*  AboutUs Component  */

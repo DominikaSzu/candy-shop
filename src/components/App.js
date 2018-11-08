@@ -23,9 +23,9 @@ class App extends React.Component {
     this.props.history.push("/about-us");
   }
 
-  navigateToCart = (e) => {
+  navigateToMap = (e) => {
     e.preventDefault();
-    this.props.history.push("/cart");
+    this.props.history.push("/visit-us");
   }
 
   addToCart = (element) => {
@@ -41,7 +41,7 @@ class App extends React.Component {
       	<Logo />
       	<Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
-                navigateToCart={this.navigateToCart}
+                navigateToMap={this.navigateToMap}
         />
       	<Products candies={this.state.candies} cart={this.state.cart} addToCart={this.addToCart} />
       	<Footer />
