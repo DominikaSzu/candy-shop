@@ -24,12 +24,12 @@ class VisitUs extends React.Component {
 
   render() {
     return (
-      <div className="map">
+      <div className="visit-us">
 		    <Logo />
 		    <Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
                 navigateToMap={this.navigateToMap}/>
-		    <MapContainer />
+		    <MapContainer  />
 		    <Footer />
       </div>
     );
