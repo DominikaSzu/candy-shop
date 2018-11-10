@@ -164,7 +164,7 @@ body, html {
 }
 
 .open-hours {
-	width: 50%;
+	width: 80%;
 	max-width: 450px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -266,5 +266,68 @@ body, html {
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
+	}
+}
+
+
+/*  Fix to add responsivness to MapContainer component  */
+
+@media screen and (max-width: 400px) {
+	.map-container {
+		width: 270px;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 450px) {
+	.map-container {
+		width: 320px;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 500px) {
+	.map-container {
+		width: 360px;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 550px) {
+	.map-container {
+		width: 400px;
+	}
+}
+
+@media screen and (min-width: 551px) and (max-width: 600px) {
+	.map-container {
+		width: 440px;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 650px) {
+	.map-container {
+		width: 480px;
+	}
+}
+
+@media screen and (min-width: 651px) and (max-width: 700px) {
+	.map-container {
+		width: 520px;
+	}
+}
+
+@media screen and (min-width: 701px) and (max-width: 750px) {
+	.map-container {
+		width: 560px;
+	}
+}
+
+@media screen and (min-width: 751px) and (max-width: 800px) {
+	.map-container {
+		width: 600px;
+	}
+}
+
+@media screen and (min-width: 801px) and (max-width: 850px) {
+	.map-container {
+		width: 640px;
 	}
 }

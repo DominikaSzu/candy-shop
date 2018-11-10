@@ -155,9 +155,7 @@ export class MapContainer extends React.Component {
 			this.map = new maps.Map(node, mapConfig);
 
 		}
-	}
-
-
+	};
 
   render() {
 	
@@ -166,7 +164,7 @@ export class MapContainer extends React.Component {
 	}
 
     return (
-    	<div className="map-container" ref="map">
+    	<div className="map-container" ref="map" >
 			Map is loading...<span role="img" aria-label="globe">🌍</span>
       	</div>
     );
