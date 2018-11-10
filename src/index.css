@@ -140,6 +140,10 @@ body, html {
 
 /*  VisitUs Component  */
 
+.visit-us .navbar, .visit-us .logo {
+	width: 100%;
+}
+
 .visit-us {
 	display: flex;
 	flex-direction: column;
@@ -147,6 +151,22 @@ body, html {
 	height: 40%;
 	width: 80%;
 	max-width: 700px;
+	margin: auto;
+}
+
+/*  VisitUsInfo Component  */
+
+.visit-us-info {
+	width: 100%;
+	max-width: 700px;
+}
+
+.open-hours {
+	width: 70%;
+	max-width: 350px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(7, 1fr);
 }
 
 /*  MapContainer Component  */
