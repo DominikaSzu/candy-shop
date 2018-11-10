@@ -22,7 +22,6 @@ class VisitUs extends React.Component {
     this.props.history.push("/visit-us");
   }
 
-
   render() {
     return (
       <div className="visit-us">
@@ -31,7 +30,7 @@ class VisitUs extends React.Component {
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
                 navigateToMap={this.navigateToMap}/>
         <VisitUsInfo />
-		    <MapContainer  />
+		    <MapContainer />
 		    <Footer />
       </div>
     );

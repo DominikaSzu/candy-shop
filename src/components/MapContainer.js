@@ -1,30 +1,44 @@
 import React from "react";
-import { GoogleApiWrapper, Map, InfoWindow, Marker } from "google-maps-react";
+import ReactDOM from 'react-dom';
+import { GoogleApiWrapper } from "google-maps-react";
 
 export class MapContainer extends React.Component {
-  
+	
+	componentDidMount = () => {
+		this.loadMap();
+	}
+	
+
+	loadMap = () => {
+		if (this.props && this.props.google) {
+			const { google } = this.props;
+			const maps = google.maps;
+			const mapRef = this.refs.map;
+			const node = ReactDOM.findDOMNode(mapRef);
+			let zoom = 14;
+			let lat = 50.064651;
+			let long = 19.944981;
+			const center = new maps.LatLng(lat, long);
+			const mapConfig = Object.assign({}, {
+				center,
+				zoom
+			});
+			this.map = new maps.Map(node, mapConfig);
+
+		}
+	}
+
 
   render() {
 	
 	if (!this.props.loaded) {
 		return <div>Loading...</div>
 	}
-	
 
     return (
-    	<div className="map-container" >
-			<Map google={this.props.google} zoom={14}>
-	 
-	        <Marker onClick={this.onMarkerClick}
-	                name={'Current location'} />
-	 
-	        <InfoWindow onClose={this.onInfoWindowClose}>
-	            <div>
-	              <h1>Candy Shop</h1>
-	            </div>
-	        </InfoWindow>
-	      </Map>
-      </div>
+    	<div className="map-container" ref="map">
+			Map is loading...<span role="img" aria-label="globe">🌍</span>
+      	</div>
     );
   }
 }
