@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import MapContainer from "./MapContainer";
+import VisitUsInfo from "./VisitUsInfo";
 
 class VisitUs extends React.Component {
   
@@ -29,6 +30,7 @@ class VisitUs extends React.Component {
 		    <Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
                 navigateToMap={this.navigateToMap}/>
+        <VisitUsInfo />
 		    <MapContainer  />
 		    <Footer />
       </div>
