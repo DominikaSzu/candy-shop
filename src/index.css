@@ -270,6 +270,21 @@ body, html {
 }
 
 
+/*  Media Queries  */
+
+@media screen and (max-width: 400px) {
+	.logo {
+		font-size: 25px;
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+	.logo {
+		font-size: 35px;
+	}
+}
+
+
 /*  Fix to add responsivness to MapContainer component  */
 
 @media screen and (max-width: 400px) {

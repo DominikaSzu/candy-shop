@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDOM from 'react-dom';
 import { GoogleApiWrapper } from "google-maps-react";
 
 export class MapContainer extends React.Component {
@@ -12,12 +11,10 @@ export class MapContainer extends React.Component {
 	loadMap = () => {
 		if (this.props && this.props.google) {
 			const { google } = this.props;
-			const maps = google.maps;
 			const mapRef = this.refs.map;
-			const node = ReactDOM.findDOMNode(mapRef);
-			let zoom = 14;
+			let zoom = 13;
 			let lat = 50.064651;
-			let long = 19.944981;
+			let lng = 19.944981;
 			const styles = [
                     {
                         "featureType": "administrative",
@@ -146,13 +143,13 @@ export class MapContainer extends React.Component {
                         ]
                     }
                 ];
-			const center = new maps.LatLng(lat, long);
+			const center = new google.maps.LatLng(lat, lng);
 			const mapConfig = Object.assign({}, {
 				center,
 				zoom, 
 				styles
 			});
-			this.map = new maps.Map(node, mapConfig);
+			this.map = new google.maps.Map(mapRef, mapConfig);
 
 		}
 	};
@@ -164,7 +161,7 @@ export class MapContainer extends React.Component {
 	}
 
     return (
-    	<div className="map-container" ref="map" >
+    	<div className="map-container" ref="map" role="application">
 			Map is loading...<span role="img" aria-label="globe">🌍</span>
       	</div>
     );
