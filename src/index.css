@@ -96,6 +96,8 @@ body, html {
 
 .product h3 {
 	margin-bottom: 0;
+	font-family: 'Kumar One Outline', cursive;
+	font-size: 1.3rem;
 }
 
 .product p {
@@ -109,6 +111,10 @@ body, html {
 }
 
 /*  AboutUs Component  */
+
+.about-us h3 {
+	font-family: 'Kumar One Outline', cursive;
+}
 
 .info-about-us {
 	display: flex;
@@ -194,14 +200,18 @@ body, html {
 	margin-top: 10px;
 }
 
-.first-span {
+.footer .first-span {
 	margin-left: 10px;
 }
 
-.second-span {
+.footer .second-span {
 	margin-right: 10px;
 }
 
+.footer .second-span a {
+	text-decoration: none;
+	color: black;
+}
 
 /*  Media queries  */
 
