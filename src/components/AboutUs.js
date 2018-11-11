@@ -25,7 +25,7 @@ class AboutUs extends React.Component {
   render() {
     return (
       <div className="about-us">
-        <Logo />
+        <Logo navigateToHome={this.navigateToHome} />
 		<Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
                 navigateToMap={this.navigateToMap}/>

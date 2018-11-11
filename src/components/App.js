@@ -38,7 +38,7 @@ class App extends React.Component {
     
     return (
       <div className="wrapper">
-      	<Logo />
+      	<Logo navigateToHome={this.navigateToHome} />
       	<Navbar navigateToHome={this.navigateToHome} 
                 navigateToCompanyInfo={this.navigateToCompanyInfo}
                 navigateToMap={this.navigateToMap}
