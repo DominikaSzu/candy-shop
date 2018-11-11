@@ -18,7 +18,7 @@ body, html {
 }
 
 .wrapper > *, .about-us >*, .visit-us >*, .not-found >* {
-	border: 1px pink solid; /* BORDER FOR BEGINNING*/
+	border: 1px pink solid; 
 }
 
 /*  Logo Component  */
