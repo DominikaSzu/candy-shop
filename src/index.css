@@ -213,6 +213,12 @@ body, html {
 	color: black;
 }
 
+/*  Candy Shop company name styles  */
+
+.company-name {
+	font-family: 'Kumar One Outline', cursive;
+}
+
 /*  Media queries  */
 
 @media screen and (min-width: 600px) {

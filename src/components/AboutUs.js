@@ -34,8 +34,11 @@ class AboutUs extends React.Component {
 			</h3>
 			<img src={companyFoto} alt="One of our empoyees preparing the cake."/>
 			<p className="desc">
-			Brownie cake cupcake sugar plum soufflé tiramisu dragée I love. Gummies topping chupa chups. Cupcake tart icing gummies cotton candy fruitcake. Oat cake soufflé apple pie gummi bears cookie wafer cupcake chocolate cake powder.
-Tootsie roll I love halvah dragée donut muffin pudding cupcake. Danish bonbon bear claw jelly beans marzipan biscuit marzipan I love. Sesame snaps danish ice cream chocolate bar donut cotton candy carrot cake powder. I love icing toffee caramels I love jelly beans.
+			Our idea to create the Candy Shop was born in the evening of cold, Friday in November 2017.
+      We were walking in the city centre, trying to find some nice place, where we could just sit down,
+      buy a really good coffee and a piece of an amazing cake (as we are always hungry). After two hours of walking, we have noticed that there is no such a place. At that very moment, all 6 of us (Joey, Phoebe,
+        Ross, Chandler, Monika and Rachel) have decided that it's about the time to create such a place. 
+        One year later, here we are for you, with our Candy Shop! 
 			</p>
 		</div>
 		<Footer />

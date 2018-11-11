@@ -1,7 +1,7 @@
 const candies = {
 	chocolatePie: {
 		name: "Chocolate Pie",
-		desc: "What sense would have a candy shop without a chocolate pie? Try one piece and buy the whole cake. As our customers say, once you try it, there is no way back. ",
+		desc: "What sense would have a shop full of sweets without a chocolate pie? Try one piece and buy the whole cake. As our customers say, once you try it, there is no way back. ",
 		img: "/images/chocolatepie.jpg"
 	},
 	cinamonBuns: {

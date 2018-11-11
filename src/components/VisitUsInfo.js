@@ -6,7 +6,7 @@ class VisitUsInfo extends React.Component {
     return (
       <div className="visit-us-info">
         <p>Have you already decided, what you want to try
-        in our delicious Candy Shop? Great!</p>
+        in our delicious <span className="company-name">Candy Shop</span>? Great!</p>
         <p>Come and visit us, here are the hours we will
         welcome you with pleasure in our place:</p>
         <div className="open-hours">
