@@ -150,7 +150,13 @@ export class MapContainer extends React.Component {
 				styles
 			});
 			this.map = new google.maps.Map(mapRef, mapConfig);
-
+            
+            // create a marker
+            const marker = new google.maps.Marker({
+                position: center,
+                map: this.map,
+                title: "Candy Shop"
+            })
 		}
 	};
 
