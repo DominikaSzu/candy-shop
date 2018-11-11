@@ -156,8 +156,22 @@ export class MapContainer extends React.Component {
                 position: center,
                 map: this.map,
                 title: "Candy Shop"
+            });
+
+            //create an info window
+            const contentInfo = `<div role="img" aria-label="Candy">Candy Shop 🍬</div`
+		    const infowindow = new google.maps.InfoWindow({
+                content: contentInfo
+            });
+
+            marker.addListener("click", () => {
+                infowindow.open(this.map, marker);
+            });
+
+            this.map.addListener("click", () => {
+                infowindow.close();
             })
-		}
+        }
 	};
 
   render() {
