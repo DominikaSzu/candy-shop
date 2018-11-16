@@ -9,7 +9,7 @@ This project was created thanks to the following code dependencies:
 * [Create React App](https://github.com/facebookincubator/create-react-app).
 * [React framework](https://github.com/facebook/react/).
 * [React-Dom package](https://github.com/facebook/react/tree/master/packages/react-dom).
-* [Foursquare API](https://developer.foursquare.com/).
+* [Firebase Google](https://firebase.google.com/)
 * [Map style](https://snazzymaps.com/style/237192/omaha).
 * [Google Maps](https://cloud.google.com/maps-platform/)
 * [Google Fonts](https://fonts.google.com/)
